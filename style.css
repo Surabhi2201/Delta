@@ -1,0 +1,63 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: black;
+    color:bisque;
+    font-family: monospace;
+}
+.upper-part{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper{
+    border: 5px solid black;
+    margin-top:50px;
+    width:1280px;
+    height:520px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    overflow:hidden;
+    
+}
+#Play{
+    margin-top: 70px;
+    margin-left:650px;
+    background-color: rgb(6, 48, 84);
+    color:azure;
+    height: 40px;
+    width: 200px;
+    z-index: 2;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.control-bar{
+   margin-left:600px;
+    height:50px;
+    width:400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+canvas{
+ 
+    background: url('images/zombie-background.jpg');
+    z-index: -1;
+}
+.bullet-generator{
+    width:300px;
+    height: 50px;
+    background-color: blue;
+}
+
+
+#owlbear,#enemy1,#enemy2{
+    display:none;
+}
